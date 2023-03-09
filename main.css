@@ -99,7 +99,7 @@
 }
 
 .input-error {
-    position: ab;
+    position: absolute;
     bottom: -16px;
     left: 0;
     font-size: 14px;
