@@ -1,0 +1,235 @@
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style.css ***!
+  \************************************************************************/
+.app-wrapper {
+    font-family: sans-serif;
+}
+
+.header {
+    border-bottom: 1px solid #000;
+}
+
+.header-container {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 16px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn {
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-text {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.btn-text:hover {
+    text-decoration: underline;
+}
+
+.avatar {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-transform: uppercase;
+    margin-left: 8px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+}
+
+
+.auth-form {
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 4px 4px 8px rgba(34, 60, 80, 0.2);
+    padding: 16px;
+    margin-top: 100px;
+    border-radius: 8px;
+}
+
+.form-title {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 32px;
+    margin-top: 8px;
+}
+
+.auth-form form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.text-control label {
+    margin-bottom: 4px;
+}
+
+.text-control:last-of-type {
+    margin-bottom: 42px;
+}
+
+.input-error {
+    position: ab;
+    bottom: -16px;
+    left: 0;
+    font-size: 14px;
+    color: red;
+}
+
+.input {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.btn-form {
+    padding: 8px 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    border-color: transparent;
+    align-self: flex-end;
+}
+
+.board {
+    padding-top: 16px;
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.task-form {
+    box-shadow: 0 5px 10px rgb(154 160 185 / 5%),
+    0 15px 40px rgb(155 173 201 / 20%);
+    padding: 32px;
+    border-radius: 8px;
+    align-self: start;
+}
+
+.task-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-card {
+    position: relative;
+    box-shadow: 0 5px 10px rgba(154 160 185 / 0.05),
+    0 15px 40px rgba(155 173 201 / 0.2);
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.task-finished {
+    text-decoration: line-through;
+}
+
+.task-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.task-description {
+    margin-bottom: 16px;
+}
+
+.time-tracker {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.timer-btn {
+    position: relative;
+    border-radius: 100%;
+    width: 22px;
+    height: 22px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.timer-btn i {
+    color: white;
+}
+
+.timer-btn:disabled {
+    cursor: not-allowed;
+    color: gray;
+}
+
+.timer-btn-play {
+    background-color: rgb(47, 255, 127);
+}
+
+.timer-btn-stop {
+    background-color: red;
+}
+
+
+.task-date {
+    color: gray;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.btn-small {
+    padding: 4px 8pcx;
+    border: 1px solid black;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.task-delete-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 50%;
+    border: 1px solid gray;
+    color: gray;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+@media (max-width: 786px) {
+    .board {
+        grid-template-columns: 1fr;
+    }
+}
+
